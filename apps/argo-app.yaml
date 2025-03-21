@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/reaperkrew/k8s-learning-repo
+    repoURL: https://github.com/reaperkrew/k8s-learning-repo.git
     path: .
     targetRevision: HEAD
   destination:
