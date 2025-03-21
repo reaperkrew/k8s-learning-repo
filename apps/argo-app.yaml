@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: feature-flag-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: file:///home/gmccarthy/apps/k8s-operator-learning/git-repo
+    path: .
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: feature-flag-ns
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
