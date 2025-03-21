@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: file:///home/gmccarthy/apps/k8s-operator-learning/git-repo
+    repoURL: https://github.com/reaperkrew/k8s-learning-repo
     path: .
     targetRevision: HEAD
   destination:
